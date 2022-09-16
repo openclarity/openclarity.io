@@ -1,0 +1,14 @@
+@import "./breakpoints";
+
+@mixin respond($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the breakpoint passed does not exist in map
+  @else {
+    @error "The passed value, `#{$breakpoint}` couldn't be retrieved. Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

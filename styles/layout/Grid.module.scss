@@ -1,0 +1,12 @@
+.Grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  position: relative;
+}
+@for $i from 1 through 12 {
+  .Span#{$i} {
+    grid-column: span $i;
+  }
+}

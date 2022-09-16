@@ -1,0 +1,37 @@
+@import "../mixins/mixins";
+
+.Container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include respond(phone-s) {
+    width: 380px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  @include respond(phone) {
+    width: 400px;
+  }
+  @include respond(phone-l) {
+    width: 500px;
+  }
+  @include respond(tablet-port) {
+    width: 800px;
+  }
+  @include respond(tablet-land) {
+    width: 1140px;
+  }
+
+  @include respond(desktop-m) {
+    width: 1300px;
+  }
+
+  @include respond(desktop) {
+    width: 1400px;
+  }
+
+  @include respond(desktop-xl) {
+    width: 2100px;
+  }
+}
