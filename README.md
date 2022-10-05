@@ -1,11 +1,15 @@
-# [apiclarity.io](https://apiclarity.io/)
+# [openclarity.io](https://openclarity.io/)
 
-![APIClarity logo](/openclarity.io/public/assets/shared/logos/logo-light-horizantal-svg.svg)
+<!-- TODO: Fix this link to point to OpenClarity logo -->
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/77afb082-feb4-498c-88cc-eff8fea128ba/deploy-status)](https://app.netlify.com/sites/apiclarity/deploys)
+![OpenClarity logo](/openclarity.io/public/assets/shared/logos/logo-light-horizantal-svg.svg)
 
-This is the repository for [apiclarity.io](https://apiclarity.io/), the website
-containing information on [APIClarity](https://github.com/apiclarity/apiclarity).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e125b48-7420-4bf2-b53f-285a7fda2b7e/deploy-status)](https://app.netlify.com/sites/openclarity/deploys)
+
+This is the repository for [openclarity.io](https://openclarity.io/), the website
+containing information on [OpenClarity](https://github.com/openclarity) projects.
+
+<!-- TODO: Fix this text to reference OpenClarity -->
 
 > APIClarity, an open source cloud native visibility tool for APIs, utilizes a Service Mesh framework to capture and analyze API traffic, and identify potential risks.
 >
