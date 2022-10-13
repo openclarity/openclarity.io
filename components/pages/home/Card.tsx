@@ -14,7 +14,7 @@ const Card = ({ logo, subLogo, description, link }: Props) => {
   const { width } = useWindowSize();
   return (
     <div
-      className={width < 900 ? gridStyles.Span12 : gridStyles.Span4}
+      className={width > 1200 ? gridStyles.Span4 : (width > 820 ? gridStyles.Span6 : gridStyles.Span12)}
       style={{ display: "flex", justifyContent: "center" }}
     >
       <div className={styles.Card}>

@@ -2,6 +2,7 @@
 
 # dependencies
 /openclarity.io/node_modules
+/node_modules
 /.pnp
 .pnp.js
 
@@ -11,9 +12,12 @@
 # next.js
 /openclarity.io/.next/
 /openclarity.io/out/
+/.next
+/out
 
 # production
 /openclarity.io/build
+/build
 
 # misc
 .DS_Store

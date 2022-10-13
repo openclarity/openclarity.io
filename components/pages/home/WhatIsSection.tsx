@@ -4,29 +4,30 @@ import Container from "../../Container";
 import gridStyles from "../../../styles/layout/Grid.module.scss";
 import { AiFillGithub } from "react-icons/ai";
 import { ImCheckmark } from "react-icons/im";
-import YoutubeEmbed from "../../YoutubeEmbed";
+import ReactPlayerLoader from "@brightcove/react-player-loader";
+
 type Props = {
   title: string;
   description: string;
   keyCapabilities: string[];
-  video?: string;
   githubLink: string;
   documentationLink: string;
   mainColor: string;
   thumbnail: string;
   diagram: string;
+  videoID: string;
 };
 
 const WhatIsSection = ({
   title,
   description,
   keyCapabilities,
-  video,
   githubLink,
   documentationLink,
   mainColor,
   thumbnail,
   diagram,
+  videoID,
 }: Props) => {
   return (
     <div className={styles.Wrapper} style={{ backgroundColor: mainColor }}>
@@ -40,7 +41,13 @@ const WhatIsSection = ({
             </h1>
             <div className={styles.Content}>
               <p className={styles.Description}>{description}</p>
-              <YoutubeEmbed embedId="tkVOf1lrxag" />
+              <div className={styles.ContentVideo}>
+                <ReactPlayerLoader
+                  accountId="1384193102001"
+                  videoId={videoID}
+                  playerId="HkD0dCe7"
+                />
+              </div>
               <img src={diagram} alt="diagram" className={styles.Diagram} />
               <h2 className={styles.Header}>Key Capabilities:</h2>
               <ul className={styles.KeyCapabilities}>

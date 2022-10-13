@@ -24,6 +24,26 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@brightcove/player-loader@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@brightcove/player-loader/-/player-loader-1.8.0.tgz#e835d7c23e0bf584a03dfefbc4640484d4b187a1"
+  integrity sha512-1JbLYEGDYfAn1N17HeXN2Rjr7Thxhi+E/sK3cU88UJtJaPTt/Oy0xFl9eKifRkmrnEy5boPsvJKywC0DRbKXAw==
+  dependencies:
+    "@brightcove/player-url" "^1.2.0"
+    global "^4.3.2"
+
+"@brightcove/player-url@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@brightcove/player-url/-/player-url-1.2.0.tgz#0ee48670b6299bf7a6ae30063d53f31c38468904"
+  integrity sha512-MhmB5JZAAPG3l3FbLiDrkNo5TKQI4Mp1xZmKk1y0DrIibh1loE14raabI30X3rizKT5ThTdvRmLlVMENUn7Gvw==
+
+"@brightcove/react-player-loader@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@brightcove/react-player-loader/-/react-player-loader-1.4.2.tgz#e0ab0dc25564164eba24a2a1f35bbe2d690135d0"
+  integrity sha512-zLKohh/HJtxPIKtucBcYsjE/Du7f6IgdOt5UKRl88OLpfCERVEaHM/no+3CFuRhV0IOo5/flrsk2qpXOc4i7uA==
+  dependencies:
+    "@brightcove/player-loader" "^1.8.0"
+
 "@eslint/eslintrc@^1.3.2":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.3.2.tgz#58b69582f3b7271d8fa67fe5251767a5b38ea356"
@@ -974,6 +994,11 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+dom-walk@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.2.tgz#0c548bef048f4d1f2a97249002236060daa3fd84"
+  integrity sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
+
 dom7@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
@@ -1555,6 +1580,14 @@ glob@^7.2.0:
     minimatch "^3.1.1"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+global@^4.3.2:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/global/-/global-4.4.0.tgz#3e7b105179006a323ed71aafca3e9c57a5cc6406"
+  integrity sha512-wv/LAoHdRE3BeTGz53FAamhGlPLhlssK45usmGFThIi4XqnBmjKQ16u+RNbP7WvigRZDxUsM0J3gcQ5yicaL0w==
+  dependencies:
+    min-document "^2.19.0"
+    process "^0.11.10"
 
 globals@^13.15.0:
   version "13.17.0"
@@ -2364,6 +2397,13 @@ mimic-response@^3.1.0:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-3.1.0.tgz#2d1d59af9c1b129815accc2c46a022a5ce1fa3c9"
   integrity sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==
 
+min-document@^2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/min-document/-/min-document-2.19.0.tgz#7bd282e3f5842ed295bb748cdd9f1ffa2c824685"
+  integrity sha512-9Wy1B3m3f66bPPmU5hdA4DR4PB2OfDU/+GS3yAB7IQozE3tqXaVv2zOjgla7MEGSRv95+ILmOuvhLkOK6wJtCQ==
+  dependencies:
+    dom-walk "^0.1.0"
+
 minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -2675,6 +2715,11 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
 prop-types@^15.0.0, prop-types@^15.5.8, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"

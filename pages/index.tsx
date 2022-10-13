@@ -46,6 +46,7 @@ const Home = ({ allPosts }: { allPosts: IBlogMetadata[] }) => {
                 mainColor,
                 thumbnail,
                 diagram,
+                videoID,
               },
               index
             ) => {
@@ -59,6 +60,7 @@ const Home = ({ allPosts }: { allPosts: IBlogMetadata[] }) => {
                   description={description}
                   keyCapabilities={keyCapabilities}
                   diagram={diagram}
+                  videoID={videoID}
                 />
               );
             }
@@ -262,7 +264,7 @@ const CodeSection = () => {
             company={{
               name: "Cisco",
               logo: ImgPaths.CiscoLogoBlue,
-              link: "https://www.ciscodesignpartners.com/application-security",
+              link: "https://panoptica.app",
             }}
           />
         </div>
