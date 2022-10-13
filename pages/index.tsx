@@ -264,7 +264,7 @@ const CodeSection = () => {
             company={{
               name: "Cisco",
               logo: ImgPaths.CiscoLogoBlue,
-              link: "https://www.ciscodesignpartners.com/application-security",
+              link: "https://panoptica.app",
             }}
           />
         </div>

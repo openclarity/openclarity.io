@@ -74,6 +74,6 @@ export const maintainersArr: ICompanyObj[] = [
 	{
 		name: "Cisco",
 		logo: ImgPaths.CiscoLogoBlue,
-		link: "https://www.ciscodesignpartners.com/application-security",
+		link: "https://panoptica.app",
 	},
 ];
