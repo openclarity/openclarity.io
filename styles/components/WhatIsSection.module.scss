@@ -11,11 +11,15 @@
   gap: 29px;
   left: 308px;
   margin-top: 130px;
+
+  &Video {
+    width: 100%;
+		aspect-ratio: 16.1/9;
+  }
 }
 .Header {
   margin-bottom: -10px;
 }
-
 .Title {
   font-style: normal;
   font-weight: 700;

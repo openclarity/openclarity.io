@@ -72,7 +72,7 @@ a {
   margin-left: 0;
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #fff;
   border-radius: 5px;
   z-index: 20;
   overflow: hidden;
@@ -107,7 +107,6 @@ a {
   background: #58585b;
   border-radius: 100%;
   border: 1px solid #fff;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   font-size: 21px;
@@ -117,9 +116,17 @@ a {
 }
 .video-js.vjs-thumbnails {
   width: 100%;
-  max-width: 716.8px;
-  min-height: 400px;
+  height: 105%;
   margin: 0 auto;
+  @media (max-width: 720px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+.video-js {
+    border-width: thick;
+    border-color: 3px solid white;
+    background-color: white
 }
 .brightcove-react-player-loader {
   display: flex;

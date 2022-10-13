@@ -16,7 +16,7 @@ export const whatIsData = [
     mainColor: "#f0ad42",
     thumbnail: ImgPaths.DefaultThumbnail,
     diagram: ImgPaths.FunctionClarityDiagram,
-    embedId: "QA-yue1GFM0",
+    videoID: "6313395920112",
   },
 
   {
@@ -34,7 +34,7 @@ export const whatIsData = [
     mainColor: "#52BAE6",
     thumbnail: ImgPaths.DefaultThumbnail,
     diagram: ImgPaths.KubeClarityDiagram,
-    embedId: "tkVOf1lrxag",
+    videoID: "6313395145112",
   },
   {
     title: "APIClarity",
@@ -51,6 +51,6 @@ export const whatIsData = [
     mainColor: "#73B736",
     thumbnail: ImgPaths.APIClarityThumbnail,
     diagram: ImgPaths.APIClarityDiagram,
-    embedId: "iLoOxzcX3_E",
+    videoID: "6313395301112",
   },
 ];
