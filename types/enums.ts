@@ -33,7 +33,7 @@ export enum SectionHeaders {
 
 export enum RouterPaths {
   Landing = "/",
-  Resources = "/resources",
+  Resources = "https://www.apiclarity.io/resources",
   // Blog = "/blog",
   About = "/about",
   Docs = "/docs",
@@ -43,6 +43,12 @@ export enum RouteNames {
   Landing = "Home",
   Docs = "Docs",
   Resources = "Resources",
+}
+
+export enum DocsRoutes {
+  FunctionClarity = "https://github.com/openclarity/functionclarity/blob/main/README.md",
+  KubeClarity = "https://github.com/openclarity/kubeclarity/blob/main/README.md",
+  APIClarity = "https://github.com/openclarity/apiclarity.io/blob/main/README.md",
 }
 
 export enum ImgPaths {
