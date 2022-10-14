@@ -38,7 +38,6 @@ const Navbar = () => {
               routeName={RouteNames.Landing}
             />
             <div
-              // onClick={() => setIsDocsOpen(!isDocsOpen)}
               onMouseLeave={() => setIsDocsOpen(false)}
               onMouseEnter={() => setIsDocsOpen(true)}
               className={styles.NavbarNavlinkMenu}
@@ -47,8 +46,6 @@ const Navbar = () => {
               {isDocsOpen && (
                 <div
                   className={styles.NavbarNavlinkMenuDropDown}
-                  // onMouseEnter={() => setIsDocsOpen(true)}
-                  // onMouseLeave={() => setIsDocsOpen(false)}
                 >
                   {Object.keys(DocsRoutes).map((item, i) => (
                     <NavDropdownItem
