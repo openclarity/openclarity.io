@@ -22,8 +22,8 @@ const Card = ({ logo, subLogo, description, link }: Props) => {
         <div className={styles.Details}>
           <img src={subLogo} alt="sublogo" className={styles.Sublogo} />
           <p className={styles.Description}>{description}</p>
-          <Link href={link}>
-            <a className={styles.Link}>Learn more {">"}</a>
+          <Link href={link} >
+            <a target='_blank' className={styles.Link}>Learn more {">"}</a>
           </Link>
         </div>
       </div>

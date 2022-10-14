@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/layout/Navbar.module.scss";
 import { useRouter } from "next/router";
-import { Colors, ImgPaths, RouteNames, RouterPaths } from "../../types/enums";
+import {
+  DocsRoutes,
+  ImgPaths,
+  RouteNames,
+  RouterPaths,
+} from "../../types/enums";
 import useWindowSize from "../../hooks/useWindowSize";
 import { AiFillGithub } from "react-icons/ai";
 import Container from "../Container";
+import NavDropdownItem from "./NavDropdownItem";
+import NavItem from "./NavItem";
 
 const Navbar = () => {
   const router = useRouter();
+  const [isDocsOpen, setIsDocsOpen] = useState(false);
 
   return (
     <div className={styles.Navbar}>
@@ -25,29 +33,36 @@ const Navbar = () => {
             </a>
           </Link>
           <div className={styles.NavbarNavlinkContainer}>
-            {Object.keys(RouteNames).map((path) => {
-              return (
-                <NavLink
-                  route={RouterPaths[path]}
-                  routeName={RouteNames[path]}
-                  key={path}
-                />
-              );
-            })}
-            <a
-              target="_blank"
-              href="https://github.com/apiclarity/apiclarity"
-              className={styles.NavbarNavlinkIconLink}
+            <NavItem
+              route={RouterPaths.Landing}
+              routeName={RouteNames.Landing}
+            />
+            <div
+              onMouseLeave={() => setIsDocsOpen(false)}
+              onMouseEnter={() => setIsDocsOpen(true)}
+              className={styles.NavbarNavlinkMenu}
             >
-              <AiFillGithub
-                className={styles.NavbarNavlinkIcon}
-                color={
-                  router.pathname === RouterPaths.Landing
-                    ? Colors.White
-                    : Colors.TextDark
-                }
-              />
-            </a>
+              <NavItem routeName={RouteNames.Docs} hasDropdown={true} />
+              {isDocsOpen && (
+                <div
+                  className={styles.NavbarNavlinkMenuDropDown}
+                >
+                  {Object.keys(DocsRoutes).map((item, i) => (
+                    <NavDropdownItem
+                      link={DocsRoutes[item]}
+                      text={item}
+                      internal={false}
+                      key={i}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+            <NavItem
+              route={RouterPaths.Resources}
+              routeName={RouteNames.Resources}
+              openNewWindow={true}
+            />
           </div>
         </div>
       </Container>
@@ -55,35 +70,4 @@ const Navbar = () => {
   );
 };
 
-interface INavLinkProps {
-  route: RouterPaths;
-  routeName: RouteNames;
-}
-
-const NavLink = ({ route, routeName }: INavLinkProps) => {
-  const router = useRouter();
-  return (
-    <Link href={route}>
-      <a
-        style={{
-          color:
-            router.pathname === RouterPaths.Landing
-              ? Colors.White
-              : Colors.TextDark,
-          borderBottom:
-            router.pathname === route
-              ? `2px solid ${
-                  router.pathname === RouterPaths.Landing
-                    ? Colors.White
-                    : Colors.TextDark
-                }`
-              : "none",
-        }}
-        className={styles.NavbarNavlink}
-      >
-        {routeName}
-      </a>
-    </Link>
-  );
-};
 export default Navbar;
