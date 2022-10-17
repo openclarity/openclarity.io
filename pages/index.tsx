@@ -255,26 +255,18 @@ const CodeSection = () => {
   return (
     <div className={styles.CodeSection}>
       <div className={styles.ClipPathHeader}>
-        <h1>Created By</h1>
+        <h1>Adopted by</h1>
       </div>
 
       <div className={styles.CodeSectionSubSection}>
         <div className={styles.CodeSectionSubSectionList}>
           <IndividualCompanyCard
             company={{
-              name: "Cisco",
-              logo: ImgPaths.CiscoLogoBlue,
+              name: "Panoptica",
+              logo: ImgPaths.PanopticaLogo,
               link: "https://panoptica.app",
             }}
           />
-        </div>
-      </div>
-      <div className={styles.CodeSectionSubSection}>
-        <h3 className={styles.CodeSectionSubheader}>Maintained by</h3>
-        <div className={styles.CodeSectionSubSectionList}>
-          {maintainersArr.map((maintainer, i) => (
-            <IndividualCompanyCard company={maintainer} key={i} />
-          ))}
         </div>
       </div>
     </div>
