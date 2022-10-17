@@ -24,33 +24,7 @@ const Layout = ({
 					rel="icon"
 					href="/assets/shared/logos/logo-favicon.png"
 				/>
-				{/* <title>APIClarity</title>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0"
-				/>
-				<meta
-					name="description"
-					content="Open source for API traffic observability in K8s clusters"
-				/>
-				<meta
-					property="og:image"
-					content={`https://apiclarity.io/assets/shared/logos/logo-dark-vertical-2x.png`}
-				/>
-				<meta name="og:title" content={siteTitle} />
-				<meta
-					name="twitter:card"
-					content="summary_large_image"
-				/>
-				<meta
-					name="twitter:description"
-					content="Open source for API traffic observability in K8s clusters"
-				/>
-				<meta
-					name="twitter:image"
-					content="https://apiclarity.io/assets/shared/logos/logo-dark-vertical-2x.png"
-				/> */}
-
+				
 				{/*<!--Tracking Code Start of HubSpot Embed Code -->*/}
 				{/* <script
 					type="text/javascript"

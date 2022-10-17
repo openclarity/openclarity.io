@@ -56,6 +56,7 @@ const Home = ({ allPosts }: { allPosts: IBlogMetadata[] }) => {
                   keyCapabilities={keyCapabilities}
                   diagram={diagram}
                   videoID={videoID}
+                  key={index}
                 />
               );
             }
