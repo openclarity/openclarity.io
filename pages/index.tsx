@@ -4,14 +4,12 @@ import { getAllPosts } from "../lib/api";
 import {
   BlogMetadata,
   ImgPaths,
-  RouterPaths,
   SectionHeaders,
 } from "../types/enums";
 import { IBlogMetadata, ICompanyObj, IFeatureObj } from "../types/types";
 import {
   eventsArr,
   featuresArr,
-  maintainersArr,
 } from "../data/landingPageArrs";
 import { Carousel } from "react-responsive-carousel";
 import SectionHeader from "../components/reusables/SectionHeader";
@@ -20,9 +18,6 @@ import { useRouter } from "next/router";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ReactPlayer from "react-player";
 import useWindowSize from "../hooks/useWindowSize";
-import { AiFillGithub } from "react-icons/ai";
-import Link from "next/link";
-import { EventSection } from "../components/reusables/EventSection";
 import Container from "../components/Container";
 import gridStyles from "../styles/layout/Grid.module.scss";
 import { whatIsData } from "../data/whatIsData";
@@ -76,8 +71,16 @@ const HeroBanner = () => {
   const { width } = useWindowSize();
   return (
     <div className={styles.HomeHeader}>
-      <img src={ImgPaths.HeroBackground} className={styles.HomeBackground} />
-      <img src={ImgPaths.HeroForeground} className={styles.HomeForeground} />
+      <img
+        src={ImgPaths.HeroBackground}
+        className={styles.HomeBackground}
+        alt="Home Background Image"
+      />
+      <img
+        src={ImgPaths.HeroForeground}
+        className={styles.HomeForeground}
+        alt="Home Foreground Image"
+      />
       <Container>
         <div className={gridStyles.Grid}>
           <div className={gridStyles.Span1} />
