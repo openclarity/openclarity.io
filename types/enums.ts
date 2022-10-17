@@ -74,6 +74,7 @@ export enum ImgPaths {
   CiscoLogoSVG = "/assets/shared/logos/cisco.svg",
   CiscoLogoBlue = "/assets/shared/logos/cisco-logo-blue.png",
   APIMetricsLogo = "/assets/shared/logos/APImetrics-logo.png",
+  PanopticaLogo = "/assets/shared/logos/panoptica-logo.png",
   FortyTwoCrunchLogo = "/assets/shared/logos/42crunch-logo.png",
   OpenClarityLogo = "/assets/shared/logos/open-clarity-logo.webp",
   HeroBackground = "/assets/shared/hero-background.png",

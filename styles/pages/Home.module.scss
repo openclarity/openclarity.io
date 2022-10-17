@@ -1,9 +1,7 @@
 .Home {
-  padding-bottom: 300px;
+  padding-bottom: 100px;
   max-width: 100vw;
-  @media (max-width: 600px) {
-    padding-bottom: 500px;
-  }
+
   position: relative;
   &Foreground {
     position: absolute;
@@ -440,7 +438,6 @@
 }
 
 .CodeSection {
-  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -500,7 +497,8 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 50px;
+      margin-top: 100px;
+
     }
   }
 
