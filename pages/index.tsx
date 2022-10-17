@@ -74,7 +74,7 @@ const HeroBanner = () => {
         <div className={gridStyles.Grid}>
           <div className={gridStyles.Span1} />
           <div className={width < 500 ? gridStyles.Span8 : gridStyles.Span4}>
-            <img src={ImgPaths.OpenClarityLogo} alt="logo" />
+            <img className={styles.HomeHeaderLogo} src={ImgPaths.OpenClarityLogo} alt="logo" />
 
             <h2 className={styles.HomeHeaderTextSubheader}>
               Cisco's complementary open source projects

@@ -1,5 +1,6 @@
 .Home {
   padding-bottom: 100px;
+  margin-top: 20px;
   max-width: 100vw;
 
   position: relative;
@@ -24,7 +25,7 @@
     height: 100%;
   }
   &Header {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -45,7 +46,7 @@
       z-index: 3;
       @media (max-width: 700px) {
         width: 100%;
-        margin-left: -1rem;
+        margin-left: 0rem;
       }
     }
 
