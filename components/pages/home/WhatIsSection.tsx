@@ -37,7 +37,7 @@ const WhatIsSection = ({
           <div className={gridStyles.Span1} />
           <div className={gridStyles.Span10}>
             <h1 className={styles.Title}>
-              <strong>What is {title}?</strong>
+              <strong style={{ backgroundColor: mainColor }}>What is {title}?</strong>
             </h1>
             <div className={styles.Content}>
               <p className={styles.Description}>{description}</p>

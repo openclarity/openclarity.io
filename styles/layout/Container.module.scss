@@ -6,7 +6,7 @@
   margin-right: auto;
   margin-left: auto;
   @include respond(phone-s) {
-    width: 380px;
+    width: 100vw;
     padding-left: 4px;
     padding-right: 4px;
   }

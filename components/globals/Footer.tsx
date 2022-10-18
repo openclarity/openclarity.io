@@ -35,7 +35,7 @@ function FooterLink({
   const getLinkType = () => {
     if (logo) {
       return (
-        <a href={ELinks.Twitter} target="_blank" rel="noreferrer">
+        <a href={ELinks.Twitter} target="_blank" rel="noreferrer" aria-label="Link to Cisco Emerging Tech & Incubation Twitter Page">
           {logo}
         </a>
       );

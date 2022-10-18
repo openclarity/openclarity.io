@@ -1,7 +1,6 @@
 import React from "react";
 import { ImgPaths } from "../../../types/enums";
 import gridStyles from "../../../styles/layout/Grid.module.scss";
-import styles from "../../../styles/components/Card.module.scss";
 import Container from "../../Container";
 import Card from "./Card";
 const cardData = [

@@ -47,4 +47,8 @@
   color: white;
   cursor: pointer;
   bottom: 20px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
