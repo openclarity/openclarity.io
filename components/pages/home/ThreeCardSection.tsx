@@ -15,7 +15,7 @@ const cardData = [
     logo: ImgPaths.KubeClarityLogo,
     sublogo: ImgPaths.KubeClaritySubLogo,
     description:
-      "KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities of container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.",
+      "KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities in container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.",
     link: "https://github.com/openclarity/kubeclarity/blob/main/README.md",
   },
   {
