@@ -4,12 +4,12 @@ export const whatIsData = [
   {
     title: "FunctionClarity",
     description:
-      "FunctionClarity is an open source tool that aims to provide a framework for signing and validating serverless cloud function artifacts (images or code) utilizing various signing techniques, including keyless.",
+      "FunctionClarity is an open source tool that provides a framework for signing and validating serverless cloud function artifacts (images or code) utilizing various signing techniques, including keyless.",
     keyCapabilities: [
       "Combined from CLI for signing and serverless infrastructure for validation",
-      "Multi cloud support(GCP, AWS, AZURE)",
-      "Keyless and key pair support",
-      "Multiple validation feedback support (detect, block and notification)",
+      "Multi-cloud support (GCP, AWS, AZURE)",
+      "Keyless and key-pair support",
+      "Multiple validation feedback support (detect, block, and notification)",
     ],
     githubLink: "https://github.com/openclarity/functionclarity",
     documentationLink: "https://github.com/openclarity/functionclarity/blob/main/README.md",
@@ -22,9 +22,9 @@ export const whatIsData = [
   {
     title: "KubeClarity",
     description:
-      "KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply chain security. ",
+      "KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities in container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security. ",
     keyCapabilities: [
-      "SBOM & vunlnerability detection",
+      "SBOM and vulnerability detection",
       "Comprehensive dashboard for SBOM analysis",
       "Pluggable architecture",
     ],
@@ -39,7 +39,7 @@ export const whatIsData = [
   {
     title: "APIClarity",
     description:
-      "APIClarity is an open source tool for APIs that helps you visualize and identify potential risks around API usage in your cloud native environments. It helps build the OpenAPI specifications for all APIs in your environment, and then helps track drift, shadow or zombie usage for those APIs. You can then use this information to build your application security posture. ",
+      "APIClarity is an open source tool for APIs that helps you visualize and identify potential risks around API usage in your cloud native environments. It helps build the OpenAPI specifications for all APIs in your environment, then helps track drift, shadow or zombie usage for those APIs. You can then use this information to build your application security posture. ",
     keyCapabilities: [
       "Quick and easy API visibility and analysis",
       "Comprehensive dashboard to monitor APIs",

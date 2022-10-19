@@ -68,7 +68,7 @@ const WhatIsSection = ({
               <div className={styles.ButtonWrapper}>
                 <a className={styles.Button} href={githubLink} target='_blank' >
                   <AiFillGithub size={25} style={{ marginRight: 5 }} />
-                  Github
+                  GitHub
                 </a>
                 <a className={styles.Button} href={documentationLink} target='_blank'>Documentation</a>
               </div>
