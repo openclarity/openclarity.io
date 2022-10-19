@@ -8,21 +8,21 @@ const cardData = [
     logo: ImgPaths.FunctionClarityLogo,
     sublogo: ImgPaths.FunctionClaritySubLogo,
     description:
-      "FunctionClarity provides a framework to sign and validate cloud function core artifacts (images or code) with various signing technics including keyless (utilizing the cosign/sigstore project).",
+      "FunctionClarity provides a framework to sign and validate cloud function core artifacts (images or code) with various signing techniques including keyless (utilizing the cosign/sigstore project).",
     link: "https://github.com/openclarity/apiclarity.io/blob/main/README.md",
   },
   {
     logo: ImgPaths.KubeClarityLogo,
     sublogo: ImgPaths.KubeClaritySubLogo,
     description:
-      "KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. It scans both runtime K8s clusters and CI/CD pipelines for enhanced software supply chain security.",
+      "KubeClarity is a tool for detection and management of software bills of materials (SBOMs) and vulnerabilities of container images and filesystems. It scans both runtime Kubernetes clusters and CI/CD pipelines for enhanced software supply-chain security.",
     link: "https://github.com/openclarity/kubeclarity/blob/main/README.md",
   },
   {
     logo: ImgPaths.APIClarityLogo,
     sublogo: ImgPaths.APIClaritySubLogo,
     description:
-      "APIClarity, an open source cloud native visibility tool for APIs, utilizes a Service Mesh framework to capture and analyze API traffic, and identify potential risks.",
+      "APIClarity, an open source cloud native visibility tool for APIs, utilizes a service-mesh framework to capture and analyze API traffic, and identify potential risks.",
     link: "https://github.com/openclarity/apiclarity.io/blob/main/README.md",
   },
 ];

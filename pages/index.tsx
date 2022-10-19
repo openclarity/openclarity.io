@@ -1,8 +1,6 @@
 import Layout from "../components/Layout";
 import styles from "../styles/pages/Home.module.scss";
-import {
-  ImgPaths
-} from "../types/enums";
+import { ImgPaths } from "../types/enums";
 import { ICompanyObj } from "../types/types";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import useWindowSize from "../hooks/useWindowSize";
@@ -74,7 +72,11 @@ const HeroBanner = () => {
         <div className={gridStyles.Grid}>
           <div className={gridStyles.Span1} />
           <div className={width < 500 ? gridStyles.Span8 : gridStyles.Span4}>
-            <img className={styles.HomeHeaderLogo} src={ImgPaths.OpenClarityLogo} alt="logo" />
+            <img
+              className={styles.HomeHeaderLogo}
+              src={ImgPaths.OpenClarityLogo}
+              alt="logo"
+            />
 
             <h2 className={styles.HomeHeaderTextSubheader}>
               Cisco's complementary open source projects
@@ -92,10 +94,12 @@ const HeroBanner = () => {
             <div className={gridStyles.Span10}>
               <h1>What is OPENClarity?</h1>
               <h2>
-                OpenClarity is an umbrella branding for Cisco's complementary
-                open source projects in the areas of security and observability
-                called APIClarity, KubeClarity, and soon the be launched
-                FunctionClarity.
+                OpenClarity is a suite of open-source tools for cloud-native
+                security and observability—APIClarity, KubeClarity, and
+                FunctionClarity (which will be launched at
+                KubeCon+CloudNativeCon USA in October, 2022). These tools
+                complement the functionality in Cisco’s cloud-native application
+                security platform, Panoptica.
               </h2>
               <h2>Read more about each project below</h2>
             </div>
