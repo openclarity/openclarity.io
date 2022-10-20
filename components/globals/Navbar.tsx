@@ -10,7 +10,6 @@ import {
   RouterPaths,
 } from "../../types/enums";
 import useWindowSize from "../../hooks/useWindowSize";
-import { AiFillGithub } from "react-icons/ai";
 import Container from "../Container";
 import NavDropdownItem from "./NavDropdownItem";
 import NavItem from "./NavItem";
@@ -25,10 +24,12 @@ const Navbar = () => {
         <div className={styles.NavbarItems}>
           <Link href={RouterPaths.Landing}>
             <a className={styles.NavbarLogoContainer}>
-              <img
+              <Image
                 className={styles.NavbarLogo}
                 src={ImgPaths.OpenClarityLogo}
                 alt="logo"
+                width={'200px'}
+                height={'30px'}
               />
             </a>
           </Link>
