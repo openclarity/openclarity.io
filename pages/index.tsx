@@ -29,6 +29,7 @@ const Home = () => {
                 mainColor,
                 thumbnail,
                 diagram,
+                diagramHeight,
                 videoID,
               },
               index
@@ -43,6 +44,7 @@ const Home = () => {
                   description={description}
                   keyCapabilities={keyCapabilities}
                   diagram={diagram}
+                  diagramHeight={diagramHeight}
                   videoID={videoID}
                   key={index}
                 />
@@ -146,10 +148,12 @@ const IndividualCompanyCard = ({ company }: { company: ICompanyObj }) => {
       className={styles.IndividualContributorContainer}
     >
       <div className={styles.IndividualContributorLogoContainer}>
-        <img
+        <Image
           className={styles.IndividualContributorLogo}
           src={company.logo}
           alt={`${company.name} Logo`}
+          width={'200px'}
+          height={'48px'}
         />
       </div>
     </a>

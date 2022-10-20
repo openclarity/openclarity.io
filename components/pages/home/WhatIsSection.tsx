@@ -5,6 +5,7 @@ import gridStyles from "../../../styles/layout/Grid.module.scss";
 import { AiFillGithub } from "react-icons/ai";
 import { ImCheckmark } from "react-icons/im";
 import ReactPlayerLoader from "@brightcove/react-player-loader";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -15,6 +16,7 @@ type Props = {
   mainColor: string;
   thumbnail: string;
   diagram: string;
+  diagramHeight: string;
   videoID: string;
 };
 
@@ -25,7 +27,7 @@ const WhatIsSection = ({
   githubLink,
   documentationLink,
   mainColor,
-  thumbnail,
+  diagramHeight,
   diagram,
   videoID,
 }: Props) => {
@@ -37,7 +39,9 @@ const WhatIsSection = ({
           <div className={gridStyles.Span1} />
           <div className={gridStyles.Span10}>
             <h1 className={styles.Title}>
-              <strong style={{ backgroundColor: mainColor }}>What is {title}?</strong>
+              <strong style={{ backgroundColor: mainColor }}>
+                What is {title}?
+              </strong>
             </h1>
             <div className={styles.Content}>
               <p className={styles.Description}>{description}</p>
@@ -48,7 +52,13 @@ const WhatIsSection = ({
                   playerId="HkD0dCe7"
                 />
               </div>
-              <img src={diagram} alt="diagram" className={styles.Diagram} />
+              <Image
+                src={diagram}
+                alt="diagram"
+                className={styles.Diagram}
+                width={"1236px"}
+                height={diagramHeight}
+              />
               <h2 className={styles.Header}>Key Capabilities:</h2>
               <ul className={styles.KeyCapabilities}>
                 {keyCapabilities.map((capability) => {
@@ -66,11 +76,17 @@ const WhatIsSection = ({
               </ul>
               <h2 className={styles.Header}>Check out the code:</h2>
               <div className={styles.ButtonWrapper}>
-                <a className={styles.Button} href={githubLink} target='_blank' >
+                <a className={styles.Button} href={githubLink} target="_blank">
                   <AiFillGithub size={25} style={{ marginRight: 5 }} />
                   GitHub
                 </a>
-                <a className={styles.Button} href={documentationLink} target='_blank'>Documentation</a>
+                <a
+                  className={styles.Button}
+                  href={documentationLink}
+                  target="_blank"
+                >
+                  Documentation
+                </a>
               </div>
             </div>
           </div>
