@@ -3,6 +3,7 @@ import React from "react";
 import useWindowSize from "../../../hooks/useWindowSize";
 import styles from "../../../styles/components/Card.module.scss";
 import gridStyles from "../../../styles/layout/Grid.module.scss";
+import Image from "next/image";
 
 type Props = {
   logo: string;
@@ -14,16 +15,30 @@ const Card = ({ logo, subLogo, description, link }: Props) => {
   const { width } = useWindowSize();
   return (
     <div
-      className={width > 1200 ? gridStyles.Span4 : (width > 820 ? gridStyles.Span6 : gridStyles.Span12)}
+      className={
+        width > 1200
+          ? gridStyles.Span4
+          : width > 820
+          ? gridStyles.Span6
+          : gridStyles.Span12
+      }
       style={{ display: "flex", justifyContent: "center" }}
     >
       <div className={styles.Card}>
-        <img src={logo} alt="logo" className={styles.Logo} />
+        <Image src={logo} alt="logo" width={"188px"} height={"150px"} />
+          <Image
+            src={subLogo}
+            alt="sublogo"
+            className={styles.Sublogo}
+            width={"270px"}
+            height={"30px"}
+          />
         <div className={styles.Details}>
-          <img src={subLogo} alt="sublogo" className={styles.Sublogo} />
           <p className={styles.Description}>{description}</p>
-          <Link href={link} >
-            <a target='_blank' className={styles.Link}>Learn more {">"}</a>
+          <Link href={link}>
+            <a target="_blank" className={styles.Link}>
+              Learn more {">"}
+            </a>
           </Link>
         </div>
       </div>

@@ -25,10 +25,7 @@
 
   &Logo {
     margin-top: -0.5rem;
-    width: 200px;
-    @media (max-width: 1000px) {
-      width: 70px;
-    }
+
     &Container {
       @media (max-width: 550px) {
         display: none;
