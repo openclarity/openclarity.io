@@ -9,6 +9,8 @@ import gridStyles from "../styles/layout/Grid.module.scss";
 import { whatIsData } from "../data/whatIsData";
 import ThreeCardSection from "../components/pages/home/ThreeCardSection";
 import WhatIsSection from "../components/pages/home/WhatIsSection";
+import Image from "next/image";
+
 const Home = () => {
   return (
     <Layout pageTitle="Home">
@@ -58,24 +60,28 @@ const HeroBanner = () => {
   const { width } = useWindowSize();
   return (
     <div className={styles.HomeHeader}>
-      <img
+      <Image
         src={ImgPaths.HeroBackground}
         className={styles.HomeBackground}
         alt="Home Background Image"
+        layout="fill"
       />
-      <img
+      <Image
         src={ImgPaths.HeroForeground}
         className={styles.HomeForeground}
         alt="Home Foreground Image"
+        layout="fill"
       />
       <Container>
         <div className={gridStyles.Grid}>
           <div className={gridStyles.Span1} />
-          <div className={width < 500 ? gridStyles.Span8 : gridStyles.Span4}>
-            <img
+          <div className={width < 500 ? gridStyles.Span10 : gridStyles.Span8}>
+            <Image
               className={styles.HomeHeaderLogo}
               src={ImgPaths.OpenClarityLogo}
               alt="logo"
+              width={'400px'}
+              height={'60px'}
             />
 
             <h2 className={styles.HomeHeaderTextSubheader}>

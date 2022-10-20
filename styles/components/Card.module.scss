@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 52px 61px;
+  padding: 48px;
   gap: 32px;
   position: relative;
   width: 100%;
@@ -19,10 +19,14 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 48px;
+  gap: 24px;
 
-  width: 269px;
-  height: 263.56px;
+  width: 270px;
+  min-height: 250px;
+
+  @media (max-width: 335px) {
+    width: 100%;
+  }
 }
 
 .Description {
@@ -43,7 +47,7 @@
   position: absolute;
   color: white;
   cursor: pointer;
-  bottom: 20px;
+  bottom: 48px;
 
   &:hover {
     text-decoration: underline;
