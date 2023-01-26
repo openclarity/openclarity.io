@@ -7,7 +7,7 @@ export const whatIsData = [
       "FunctionClarity is an open source tool that provides a framework for signing and validating serverless cloud function artifacts (images or code) utilizing various signing techniques, including keyless.",
     keyCapabilities: [
       "Combined from CLI for signing and serverless infrastructure for validation",
-      "Multi-cloud support (GCP, AWS, AZURE)",
+      "Multi-cloud support (GCP, AWS, Azure)",
       "Keyless and key-pair support",
       "Multiple validation feedback support (detect, block, and notification)",
     ],
