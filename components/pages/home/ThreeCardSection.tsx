@@ -5,13 +5,6 @@ import Container from "../../Container";
 import Card from "./Card";
 const cardData = [
   {
-    logo: ImgPaths.FunctionClarityLogo,
-    sublogo: ImgPaths.FunctionClaritySubLogo,
-    description:
-      "FunctionClarity provides a framework to sign and validate cloud function core artifacts (images or code) with various signing techniques including keyless (utilizing the cosign/sigstore project).",
-    link: "https://github.com/openclarity/functionclarity/blob/main/README.md",
-  },
-  {
     logo: ImgPaths.KubeClarityLogo,
     sublogo: ImgPaths.KubeClaritySubLogo,
     description:
