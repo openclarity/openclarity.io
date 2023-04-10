@@ -5,7 +5,7 @@ import Navbar from "./globals/Navbar";
 import Footer from "./globals/Footer";
 import { NextSeo } from "next-seo";
 
-export const siteTitle = "APIClarity";
+export const siteTitle = "OpenClarity";
 
 const Layout = ({
 	pageTitle,
@@ -36,7 +36,7 @@ const Layout = ({
 				{/*<!--Tracking Code End of HubSpot Embed Code -->*/}
 			</Head>
 			<NextSeo
-				title={`APIClarity | ${pageTitle}`}
+				title={`OpenClarity | ${pageTitle}`}
 				description="Open source for API traffic visibility in K8s clusters"
 				canonical={`https://apiclarity.io${pagePath || ""}`}
 				openGraph={{
