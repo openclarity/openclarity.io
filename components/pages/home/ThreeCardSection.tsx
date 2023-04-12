@@ -5,11 +5,11 @@ import Container from "../../Container";
 import Card from "./Card";
 const cardData = [
   {
-    logo: ImgPaths.VMClarityLogo,
-    sublogo: ImgPaths.VMClaritySubLogo,
+    logo: ImgPaths.FunctionClarityLogo,
+    sublogo: ImgPaths.FunctionClaritySubLogo,
     description:
-    "VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.",
-    link: "https://github.com/openclarity/vmclarity/blob/main/README.md",
+      "FunctionClarity provides a framework to sign and validate cloud function core artifacts (images or code) with various signing techniques including keyless (utilizing the cosign/sigstore project).",
+    link: "https://github.com/openclarity/functionclarity/blob/main/README.md",
   },
   {
     logo: ImgPaths.KubeClarityLogo,

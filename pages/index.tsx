@@ -103,7 +103,8 @@ const HeroBanner = () => {
               <h1>What is OpenClarity?</h1>
               <h2>
                 OpenClarity is a suite of open source tools for cloud native
-                security and observability—APIClarity, KubeClarity and VMClarity.
+                security and observability—APIClarity, KubeClarity, and
+                FunctionClarity.
               </h2>
               <h2>Read more about each project below.</h2>
             </div>
