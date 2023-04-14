@@ -33,7 +33,7 @@ export enum SectionHeaders {
 
 export enum RouterPaths {
   Landing = "/",
-  Resources = "https://www.apiclarity.io/resources",
+  Resources = "/resources",
   // Blog = "/blog",
   About = "/about",
   Docs = "/docs",
@@ -67,7 +67,7 @@ export enum ImgPaths {
   LogoDarkVertical = "/assets/shared/logos/logo-dark-vertical.png",
   LogoDarkVertical2x = "/assets/shared/logos/logo-dark-vertical-2x.png",
   LogoDarkHorizantalSVG = "/assets/shared/logos/logo-dark-horizantal-svg.svg",
-  LogoDarkIconSVG = "/assets/shared/logos/logo-dark-icon-svg.svg",
+  LogoDarkIconSVG = "/assets/shared/logos/logo-dark-svg.svg",
   LogoLightHorizantalSVG = "/assets/shared/logos/logo-light-horizantal-svg.svg",
   LogoLightIconSVG = "/assets/shared/logos/logo-light-icon-svg.svg",
   SharedImages = "/assets/shared",

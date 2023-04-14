@@ -33,7 +33,7 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install",
+	"postCreateCommand": "yarn install;yarn build",
 
 	"postStartCommand": "yarn dev",
 

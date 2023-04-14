@@ -6,8 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 5rem;
   z-index: 10;
-  height: 130px;
 
   &Items {
     display: flex;
@@ -25,6 +25,11 @@
 
   &Logo {
     margin-top: -0.5rem;
+    width:200px;
+
+    @media (max-width: 1000px) {
+			width: 70px;
+		}
 
     &Container {
       @media (max-width: 550px) {
@@ -51,7 +56,6 @@
     &Container {
       display: flex;
       flex-direction: row;
-      background-color: #1C3A5F;
     }
     &Menu {
       position: relative;

@@ -39,6 +39,55 @@ export const resourcesList: IResource[] = [
 
 export const resourcesArticles: IResourcesArticle[] = [
 	{
+		author: "Shannon McFarland",
+		image: "/assets/shared/resourcesPage/d802b9c8-cab2-4da0-a760-6e0534e5d701.png",		
+		link:"https://dev.to/ciscoemerge/vmclarity-virtual-machine-security-5e8g",
+		linkText:"dev.to",
+		title: "VMClarity: Virtual Machine Security",
+	},
+	{
+		author: "Anne McCormick",
+		image: "/assets/shared/resourcesPage/shutterstock_651684340.jpg",
+		link: "https://techblog.cisco.com/blog/apiclarity-detecting-shadow-apis",
+		linkText: "Cisco Tech Blog",
+		title: "APIClarity: Detecting Shadow APIs",
+	},
+	{
+		author: "Anne McCormick",
+		image: "/assets/shared/resourcesPage/shutterstock_651684340.jpg",
+		link: "https://techblog.cisco.com/blog/apiclarity-reconst-openapi-spec",
+		linkText: "Cisco Tech Blog",
+		title: "APIClarity: Reconstructing an OpenAPI Specification",
+	},
+	{
+		author: "Anne McCormick",
+		image: "/assets/shared/resourcesPage/shutterstock_651684340.jpg",
+		link: "https://techblog.cisco.com/blog/apiclarity-upload-openapi-spec",
+		linkText: "Cisco Tech Blog",
+		title: "APIClarity: Uploading an OpenAPI Specification",
+	},
+	{
+		author: "Anne McCormick",
+		image: "/assets/shared/resourcesPage/shutterstock_1015952689-copy-scaled.jpeg",
+		link: "https://techblog.cisco.com/blog/apiclarity-overview-series-installation",
+		linkText: "Cisco Tech Blog",
+		title: "APIClarity Overview Series: Installation",
+	},
+	{
+		author: "Anne McCormick",
+		image: "/assets/shared/resourcesPage/shutterstock_1015952689-copy-scaled.jpeg",
+		link: "https://techblog.cisco.com/blog/apiclarity-overview-series-architecture",
+		linkText: "Cisco Tech Blog",
+		title: "APIClarity Overview Series: Architecture",
+	},
+	{
+		author: "Pallavi Kalapatapu",
+		image: "/assets/shared/resourcesPage/Screenshot-2023-03-06-at-3.12.29-PM.png",
+		link: "https://techblog.cisco.com/blog/software-supply-chain-security-with-kubeclarity",
+		linkText: "Cisco Tech Blog",
+		title: "Lean Into Software Supply Chain Security with KubeClarity",
+	},
+	{
 		author: "JockDaRock",
 		image:
 			"/assets/shared/resourcesPage/devnet-article-12-13-21.png",
@@ -129,6 +178,20 @@ export const resourcesArticles: IResourcesArticle[] = [
 ];
 
 export const resourcesMedia: IResourcesMedia[] = [
+	{
+		title:
+			"VMClarity: Getting Started",
+		link: "https://www.youtube.com/watch?v=tnEac8twDsc",
+		mediaType: "Video",
+		image: `${ImgPaths.SharedImages}/resourcesPage/vmclarity-getting-started.jpeg`,
+	},
+	{
+		title:
+			"VMClarity: Project Introduction",
+		link: "https://www.youtube.com/watch?v=pXmOIwzR7LQ",
+		mediaType: "Video",
+		image: `${ImgPaths.SharedImages}/resourcesPage/vmclarity-introduction.jpeg`,
+	},
 	{
 		title:
 			"APIClarity Q&A Session with Justin Cohen",
