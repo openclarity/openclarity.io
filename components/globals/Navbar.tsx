@@ -78,20 +78,20 @@ const Navbar = () => {
               route={RouterPaths.Resources}
               routeName={RouteNames.Resources}
             />
-            				<a
-					target="_blank"
-					href="https://github.com/openclarity"
-					className={styles.NavbarNavlinkIconLink}
-				>
-					<AiFillGithub
-						className={styles.NavbarNavlinkIcon}
-						color={
-							router.pathname === RouterPaths.Landing
-								? Colors.White
-								: Colors.TextDark
-						}
-					/>
-				</a>
+                    <a
+          target="_blank"
+          href="https://github.com/openclarity"
+          className={styles.NavbarNavlinkIconLink}
+        >
+          <AiFillGithub
+            className={styles.NavbarNavlinkIcon}
+            color={
+              router.pathname === RouterPaths.Landing
+                ? Colors.White
+                : Colors.TextDark
+            }
+          />
+        </a>
           </div>
     </div>
   );
