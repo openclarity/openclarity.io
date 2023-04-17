@@ -28,8 +28,8 @@
     width:200px;
 
     @media (max-width: 1000px) {
-			width: 70px;
-		}
+      width: 70px;
+    }
 
     &Container {
       @media (max-width: 550px) {
