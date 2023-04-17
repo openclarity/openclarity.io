@@ -2,7 +2,7 @@
 
 <!-- TODO: Fix this link to point to OpenClarity logo -->
 
-![OpenClarity logo](/public/assets/shared/logos/logo-light-horizantal-svg.svg)
+![OpenClarity logo](/public/assets/shared/logos/openclarity-logo-light-bg-horizontal.svg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6e125b48-7420-4bf2-b53f-285a7fda2b7e/deploy-status)](https://app.netlify.com/sites/openclarity/deploys)
 
