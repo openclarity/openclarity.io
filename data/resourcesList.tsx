@@ -180,6 +180,13 @@ export const resourcesArticles: IResourcesArticle[] = [
 export const resourcesMedia: IResourcesMedia[] = [
   {
     title:
+      "VMClarity: What is happening behind the scenes?",
+    link: "https://www.youtube.com/watch?v=ApWl336-mVU",
+    mediaType: "Video",
+    image: `${ImgPaths.SharedImages}/resourcesPage/vmclarity-what-happens-behind-the-scenes.jpeg`,
+  },
+  {
+    title:
       "VMClarity: Getting Started",
     link: "https://www.youtube.com/watch?v=tnEac8twDsc",
     mediaType: "Video",
