@@ -40,6 +40,13 @@ export const resourcesList: IResource[] = [
 export const resourcesArticles: IResourcesArticle[] = [
   {
     author: "Shannon McFarland",
+    image: "/assets/shared/resourcesPage/a91e3fe7-7bfe-4e80-9d0e-52a220788f99.png",
+    link: "https://dev.to/ciscoemerge/vmclarity-what-happens-during-a-scan-3g08",
+    linkText: "dev.to",
+    title: "VMClarity: What Happens During a Scan?",
+  },
+  {
+    author: "Shannon McFarland",
     image: "/assets/shared/resourcesPage/d802b9c8-cab2-4da0-a760-6e0534e5d701.png",		
     link:"https://dev.to/ciscoemerge/vmclarity-virtual-machine-security-5e8g",
     linkText:"dev.to",
