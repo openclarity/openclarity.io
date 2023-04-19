@@ -39,6 +39,13 @@ export const resourcesList: IResource[] = [
 
 export const resourcesArticles: IResourcesArticle[] = [
   {
+    author: "Pallavi Kalapatapu",
+    image: "/assets/shared/resourcesPage/KubeClarityInternals.png",
+    link: "https://techblog.cisco.com/blog/kubeclarity-introduction-to-internals",
+    linkText: "Cisco Tech Blog",
+    title: "KubeClarity: Introduction to Internals",
+  },
+  {
     author: "Shannon McFarland",
     image: "/assets/shared/resourcesPage/a91e3fe7-7bfe-4e80-9d0e-52a220788f99.png",
     link: "https://dev.to/ciscoemerge/vmclarity-what-happens-during-a-scan-3g08",
