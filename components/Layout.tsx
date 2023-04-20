@@ -37,13 +37,13 @@ const Layout = ({
 			</Head>
 			<NextSeo
 				title={`OpenClarity | ${pageTitle}`}
-				description="OpenClarity is a suite of open source tools for cloud native security and observability—APIClarity, KubeClarity and VMClarity."
+				description="OpenClarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity."
 				canonical={`https://openclarity.io${pagePath || ""}`}
 				openGraph={{
 					url: `https://openclarity.io${pagePath || ""}`,
 					title: `OpenClarity | ${pageTitle}`,
 					description:
-						"OpenClarity is a suite of open source tools for cloud native security and observability—APIClarity, KubeClarity and VMClarity.",
+						"OpenClarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity.",
 					images: [
 						{
 							url: "https://openclarity.io/assets/shared/logos/opengraph-logo.png",
