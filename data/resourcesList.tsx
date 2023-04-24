@@ -41,7 +41,7 @@ export const resourcesArticles: IResourcesArticle[] = [
   {
     author: "Shannon McFarland",
     image: "/assets/shared/resourcesPage/9764d8f9-081c-483c-bc3a-40294e4ebc61.png",
-    link: "https://dev.to/shmcfarl/vmclarity-how-to-use-the-api-1e48",
+    link: "https://dev.to/ciscoemerge/vmclarity-how-to-use-the-api-1e48",
     linkText: "dev.to",
     title: "VMClarity: How to use the API",
   },
