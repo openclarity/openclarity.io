@@ -39,6 +39,13 @@ export const resourcesList: IResource[] = [
 
 export const resourcesArticles: IResourcesArticle[] = [
   {
+    author: "Pallavi Kalapatapu",
+    image: "/assets/shared/resourcesPage/kubeclarity-easyinstall.png",
+    link: "https://techblog.cisco.com/blog/kubeclarity-install-and-test-drive",
+    linkText: "Cisco Tech Blog",
+    title: "KubeClarity: Install and Test Drive",
+  },
+  {
     author: "Shannon McFarland",
     image: "/assets/shared/resourcesPage/9764d8f9-081c-483c-bc3a-40294e4ebc61.png",
     link: "https://dev.to/ciscoemerge/vmclarity-how-to-use-the-api-1e48",
