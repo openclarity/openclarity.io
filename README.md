@@ -41,7 +41,7 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to access the project in production mode.
 
-*Note: Next/Image is not currently working when using next export, so we are using standard HTML img tags for now. In the future, we will either stop using export or the issue will be fixed and we will update accordingly.*
+_Note: Next/Image is not currently working when using next export, so we are using standard HTML img tags for now. In the future, we will either stop using export or the issue will be fixed and we will update accordingly._
 
 ### Technologies Used
 

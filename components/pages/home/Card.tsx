@@ -26,13 +26,13 @@ const Card = ({ logo, subLogo, description, link }: Props) => {
     >
       <div className={styles.Card}>
         <Image src={logo} alt="logo" width={"188px"} height={"150px"} />
-          <Image
-            src={subLogo}
-            alt="sublogo"
-            className={styles.Sublogo}
-            width={"270px"}
-            height={"30px"}
-          />
+        <Image
+          src={subLogo}
+          alt="sublogo"
+          className={styles.Sublogo}
+          width={"270px"}
+          height={"30px"}
+        />
         <div className={styles.Details}>
           <p className={styles.Description}>{description}</p>
           <Link href={link}>

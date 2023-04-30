@@ -4,36 +4,36 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const NavDropdownItem = ({
-    link,
-    text,
-    internal = false,
-  }: {
-    link?: string;
-    text: string;
-    disabled?: boolean;
-    internal?: boolean;
-  }) => {
-    const router = useRouter();
-    return internal ? (
-      <Link href={link}>
-        <a
-          className={
-            router.pathname === link
-              ? styles.PrimaryNavDropdownMenuItemActive
-              : styles.PrimaryNavDropdownMenuItem
-          }
-        >
-          {text}
-        </a>
-      </Link>
-    ) : (
+  link,
+  text,
+  internal = false,
+}: {
+  link?: string;
+  text: string;
+  disabled?: boolean;
+  internal?: boolean;
+}) => {
+  const router = useRouter();
+  return internal ? (
+    <Link href={link}>
       <a
-        className={styles.PrimaryNavDropdownMenuItem}
-        href={link}
-        target="_blank"
+        className={
+          router.pathname === link
+            ? styles.PrimaryNavDropdownMenuItemActive
+            : styles.PrimaryNavDropdownMenuItem
+        }
       >
         {text}
       </a>
-    );
-  };
-  export default NavDropdownItem;
+    </Link>
+  ) : (
+    <a
+      className={styles.PrimaryNavDropdownMenuItem}
+      href={link}
+      target="_blank"
+    >
+      {text}
+    </a>
+  );
+};
+export default NavDropdownItem;

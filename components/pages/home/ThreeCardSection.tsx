@@ -8,7 +8,7 @@ const cardData = [
     logo: ImgPaths.VMClarityLogo,
     sublogo: ImgPaths.VMClaritySubLogo,
     description:
-    "VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.",
+      "VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.",
     link: "https://github.com/openclarity/vmclarity/blob/main/README.md",
   },
   {

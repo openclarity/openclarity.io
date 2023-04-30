@@ -5,7 +5,7 @@
   left: 0;
   background-color: #ddd;
   // background-image: url("/assets/shared/banner-api-clarity.jpeg");
-// background-size: cover;
+  // background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,22 +13,22 @@
   align-items: center;
 
   &Logo {
-      width: 150px;
+    width: 150px;
   }
 
   &Title {
-      font-size: 18px;
-      font-weight: 400;
-      color: #ccc;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ccc;
   }
 
   &Copyright {
-      font-size: 18px;
-      font-weight: 400;
-      color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
 
-      &Icon {
-          margin-bottom: -3px;
-      }
+    &Icon {
+      margin-bottom: -3px;
+    }
   }
 }
