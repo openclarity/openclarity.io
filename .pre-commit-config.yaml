@@ -1,0 +1,25 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: check-json
+        exclude: ".devcontainer"
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v3.0.0-alpha.9-for-vscode" # ignored, see https://github.com/pre-commit/mirrors-prettier/issues/29
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@2.8.8 # This is the real version used
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: "v8.39.0"
+    hooks:
+      - id: eslint
