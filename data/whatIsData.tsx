@@ -15,11 +15,12 @@ export const whatIsData = [
       "Rootkit detection",
     ],
     githubLink: "https://github.com/openclarity/vmclarity",
-    documentationLink: "https://github.com/openclarity/vmclarity/blob/main/README.md",
+    documentationLink:
+      "https://github.com/openclarity/vmclarity/blob/main/README.md",
     mainColor: "#f0ad42",
     thumbnail: ImgPaths.DefaultThumbnail,
     diagram: ImgPaths.VMClarityDiagram,
-    diagramHeight: '603px',
+    diagramHeight: "603px",
     videoID: "6324304119112",
   },
   {
@@ -37,7 +38,7 @@ export const whatIsData = [
     mainColor: "#52BAE6",
     thumbnail: ImgPaths.DefaultThumbnail,
     diagram: ImgPaths.KubeClarityDiagram,
-    diagramHeight: '569px',
+    diagramHeight: "569px",
     videoID: "6313395145112",
   },
   {
@@ -55,7 +56,7 @@ export const whatIsData = [
     mainColor: "#73B736",
     thumbnail: ImgPaths.APIClarityThumbnail,
     diagram: ImgPaths.APIClarityDiagram,
-    diagramHeight: '558px',
+    diagramHeight: "558px",
     videoID: "6313395301112",
   },
 ];

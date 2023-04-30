@@ -1,6 +1,5 @@
-import React from "react";
-import { ImgPaths } from "../../../types/enums";
 import gridStyles from "../../../styles/layout/Grid.module.scss";
+import { ImgPaths } from "../../../types/enums";
 import Container from "../../Container";
 import Card from "./Card";
 const cardData = [
@@ -8,7 +7,7 @@ const cardData = [
     logo: ImgPaths.VMClarityLogo,
     sublogo: ImgPaths.VMClaritySubLogo,
     description:
-    "VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.",
+      "VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.",
     link: "https://github.com/openclarity/vmclarity/blob/main/README.md",
   },
   {

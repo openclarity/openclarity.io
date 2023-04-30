@@ -86,8 +86,8 @@ module.exports = {
   images: {
     remotePatterns: [
       {
-        hostname: 'i.ytimg.com',
+        hostname: "i.ytimg.com",
       },
     ],
   },
-}
+};

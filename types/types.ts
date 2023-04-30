@@ -1,5 +1,4 @@
-import { ImgPaths } from "./enums";
-import { ELinks } from "./enums";
+import { ELinks, ImgPaths } from "./enums";
 
 export interface IBlogMetadata {
   title: string;

@@ -1,7 +1,7 @@
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import styles from "../styles/layout/Footer.module.scss";
 import { ELinks } from "../types/enums";
 import { IFooterLinks } from "../types/types";
-import styles from "../styles/layout/Footer.module.scss";
 
 export const topLineLeftLinks: IFooterLinks[] = [
   {

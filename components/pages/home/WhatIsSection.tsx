@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "../../../styles/components/WhatIsSection.module.scss";
-import Container from "../../Container";
-import gridStyles from "../../../styles/layout/Grid.module.scss";
-import { AiFillGithub } from "react-icons/ai";
-import { ImCheckmark } from "react-icons/im";
 import ReactPlayerLoader from "@brightcove/react-player-loader";
 import Image from "next/image";
+import { AiFillGithub } from "react-icons/ai";
+import { ImCheckmark } from "react-icons/im";
+import styles from "../../../styles/components/WhatIsSection.module.scss";
+import gridStyles from "../../../styles/layout/Grid.module.scss";
+import Container from "../../Container";
 
 type Props = {
   title: string;
@@ -76,7 +75,12 @@ const WhatIsSection = ({
               </ul>
               <h2 className={styles.Header}>Check out the code:</h2>
               <div className={styles.ButtonWrapper}>
-                <a className={styles.Button} href={githubLink} target="_blank">
+                <a
+                  className={styles.Button}
+                  href={githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiFillGithub size={25} style={{ marginRight: 5 }} />
                   GitHub
                 </a>
@@ -84,6 +88,7 @@ const WhatIsSection = ({
                   className={styles.Button}
                   href={documentationLink}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Documentation
                 </a>

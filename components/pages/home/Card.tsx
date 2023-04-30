@@ -1,9 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import useWindowSize from "../../../hooks/useWindowSize";
 import styles from "../../../styles/components/Card.module.scss";
 import gridStyles from "../../../styles/layout/Grid.module.scss";
-import Image from "next/image";
 
 type Props = {
   logo: string;
@@ -26,13 +25,13 @@ const Card = ({ logo, subLogo, description, link }: Props) => {
     >
       <div className={styles.Card}>
         <Image src={logo} alt="logo" width={"188px"} height={"150px"} />
-          <Image
-            src={subLogo}
-            alt="sublogo"
-            className={styles.Sublogo}
-            width={"270px"}
-            height={"30px"}
-          />
+        <Image
+          src={subLogo}
+          alt="sublogo"
+          className={styles.Sublogo}
+          width={"270px"}
+          height={"30px"}
+        />
         <div className={styles.Details}>
           <p className={styles.Description}>{description}</p>
           <Link href={link}>
