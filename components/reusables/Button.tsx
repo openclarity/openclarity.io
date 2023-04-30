@@ -50,6 +50,7 @@ export const CustomLink = ({
   return (
     <a
       target={openNewWindow ? "_blank" : "_self"}
+      rel="noreferrer"
       href={link}
       className={`${styles[buttonType]} ${
         dark ? styles[`${buttonType}Dark`] : ""

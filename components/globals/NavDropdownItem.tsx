@@ -30,6 +30,7 @@ const NavDropdownItem = ({
       className={styles.PrimaryNavDropdownMenuItem}
       href={link}
       target="_blank"
+      rel="noreferrer"
     >
       {text}
     </a>

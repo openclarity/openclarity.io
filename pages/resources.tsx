@@ -75,10 +75,20 @@ const ResourcesArticle = ({
   author,
 }: IResourcesArticle) => {
   return (
-    <a href={link} target="_blank" className={styles.ResourcesArticle}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className={styles.ResourcesArticle}
+    >
       <img src={image} alt={title} />
       <div className={styles.ResourcesArticleContentContainer}>
-        <a className={styles.ResourcesLink} href={link} target="_blank">
+        <a
+          className={styles.ResourcesLink}
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+        >
           <FiExternalLink className={styles.ResourcesLinkIcon} />
           <p>Article: {linkText}</p>
         </a>
@@ -91,12 +101,22 @@ const ResourcesArticle = ({
 
 const ResourcesMedia = ({ image, mediaType, link, title }: IResourcesMedia) => {
   return (
-    <a href={link} target="_blank" className={styles.ResourcesMedia}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className={styles.ResourcesMedia}
+    >
       <div className={styles.ResourcesMediaImage}>
         <CustomImage src={image} alt={title} lazyLoad={false} />
       </div>
       <div className={styles.ResourcesMediaContent}>
-        <a className={styles.ResourcesLink} href={link} target="_blank">
+        <a
+          className={styles.ResourcesLink}
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+        >
           <FiExternalLink className={styles.ResourcesLinkIcon} />
           <p>{mediaType}</p>
         </a>

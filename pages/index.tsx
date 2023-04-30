@@ -142,6 +142,7 @@ const IndividualCompanyCard = ({ company }: { company: ICompanyObj }) => {
     <a
       href={company.link}
       target="_blank"
+      rel="noreferrer"
       className={styles.IndividualContributorContainer}
     >
       <div className={styles.IndividualContributorLogoContainer}>
