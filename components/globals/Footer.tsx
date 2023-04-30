@@ -1,9 +1,8 @@
-import React from "react";
-import styles from "../../styles/layout/Footer.module.scss";
-import { BiCopyright } from "react-icons/bi";
 import { format } from "date-fns";
+import { useRouter } from "next/router";
+import { BiCopyright } from "react-icons/bi";
+import styles from "../../styles/layout/Footer.module.scss";
 import { ImgPaths, RouterPaths } from "../../types/enums";
-import { Router, useRouter } from "next/router";
 
 const Footer = () => {
   const router = useRouter();

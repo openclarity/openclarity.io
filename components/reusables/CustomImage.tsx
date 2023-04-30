@@ -1,6 +1,5 @@
-import React from "react";
-import useImageHook from "../../hooks/useImageHook";
 import Image from "next/image";
+import useImageHook from "../../hooks/useImageHook";
 
 const CustomImage = ({
   src,

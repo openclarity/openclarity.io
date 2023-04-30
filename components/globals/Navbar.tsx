@@ -1,18 +1,17 @@
-import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../styles/layout/Navbar.module.scss";
 import { useRouter } from "next/router";
+import { useState } from "react";
+import { AiFillGithub } from "react-icons/ai";
+import useWindowSize from "../../hooks/useWindowSize";
+import styles from "../../styles/layout/Navbar.module.scss";
 import {
-  DocsRoutes,
   Colors,
+  DocsRoutes,
   ImgPaths,
   RouteNames,
   RouterPaths,
 } from "../../types/enums";
-import useWindowSize from "../../hooks/useWindowSize";
-import { AiFillGithub } from "react-icons/ai";
-import Container from "../Container";
 import NavDropdownItem from "./NavDropdownItem";
 import NavItem from "./NavItem";
 

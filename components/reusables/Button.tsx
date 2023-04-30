@@ -1,7 +1,6 @@
-import React from "react";
+import { RiArrowRightSLine } from "react-icons/ri";
 import styles from "../../styles/components/Button.module.scss";
 import { EButtonType } from "../../types/enums";
-import { RiArrowRightSLine } from "react-icons/ri";
 
 export const Button = ({
   onClick,

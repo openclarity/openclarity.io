@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Layout from "../components/Layout";
 import { DocsContextProvider, useDocsContext } from "../context/docs-context";
 import styles from "../styles/pages/DocsPage.module.scss";

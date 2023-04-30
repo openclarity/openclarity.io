@@ -1,9 +1,8 @@
-import React from "react";
+import { NextSeo } from "next-seo";
 import Head from "next/head";
 import styles from "../styles/layout/Layout.module.scss";
-import Navbar from "./globals/Navbar";
 import Footer from "./globals/Footer";
-import { NextSeo } from "next-seo";
+import Navbar from "./globals/Navbar";
 
 export const siteTitle = "OpenClarity";
 

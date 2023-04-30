@@ -1,10 +1,9 @@
+import { cilApiclarityColumn } from "../../data/cilApiClarityColumn";
 import useWindowSize from "../../hooks/useWindowSize";
-import CustomImage from "../reusables/CustomImage";
 import styles from "../../styles/components/EventSection.module.scss";
-import { CustomLink } from "../reusables/Button";
 import { EButtonType } from "../../types/enums";
 import { IEventColumn } from "../../types/types";
-import { cilApiclarityColumn } from "../../data/cilApiClarityColumn";
+import { CustomLink } from "../reusables/Button";
 
 export const EventSection = ({ image }: { image: string }) => {
   const windowSize = useWindowSize();

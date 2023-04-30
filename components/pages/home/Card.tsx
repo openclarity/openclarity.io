@@ -1,9 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import useWindowSize from "../../../hooks/useWindowSize";
 import styles from "../../../styles/components/Card.module.scss";
 import gridStyles from "../../../styles/layout/Grid.module.scss";
-import Image from "next/image";
 
 type Props = {
   logo: string;

@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "../../../styles/components/WhatIsSection.module.scss";
-import Container from "../../Container";
-import gridStyles from "../../../styles/layout/Grid.module.scss";
-import { AiFillGithub } from "react-icons/ai";
-import { ImCheckmark } from "react-icons/im";
 import ReactPlayerLoader from "@brightcove/react-player-loader";
 import Image from "next/image";
+import { AiFillGithub } from "react-icons/ai";
+import { ImCheckmark } from "react-icons/im";
+import styles from "../../../styles/components/WhatIsSection.module.scss";
+import gridStyles from "../../../styles/layout/Grid.module.scss";
+import Container from "../../Container";
 
 type Props = {
   title: string;

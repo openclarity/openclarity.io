@@ -1,8 +1,7 @@
-import React from "react";
-import styles from "../../styles/layout/Navbar.module.scss";
-import { useRouter } from "next/router";
 import Link from "next/link";
-import { Colors, ImgPaths, RouteNames, RouterPaths } from "../../types/enums";
+import { useRouter } from "next/router";
+import styles from "../../styles/layout/Navbar.module.scss";
+import { Colors, RouterPaths } from "../../types/enums";
 
 const NavItem = ({
   link = "",

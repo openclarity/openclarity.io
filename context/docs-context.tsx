@@ -1,6 +1,4 @@
-import React, { useRef } from "react";
-import { useContext } from "react";
-import { createContext } from "react";
+import React, { createContext, useContext, useRef } from "react";
 
 interface IDocsContext {
   challenges: React.MutableRefObject<any>;

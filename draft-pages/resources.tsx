@@ -1,9 +1,9 @@
 import { FiExternalLink } from "react-icons/fi";
+import Layout from "../components/Layout";
+import CustomImage from "../components/reusables/CustomImage";
 import { resourcesArticles, resourcesMedia } from "../data/resourcesList";
 import styles from "../styles/pages/ResourcesPage.module.scss";
 import { IResourcesArticle, IResourcesMedia } from "../types/types";
-import CustomImage from "../components/reusables/CustomImage";
-import Layout from "../components/Layout";
 
 const Resources = () => {
   return (

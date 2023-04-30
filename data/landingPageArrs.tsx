@@ -1,7 +1,7 @@
 import { FcCameraIdentification, FcEditImage, FcPrivacy } from "react-icons/fc";
+import styles from "../styles/pages/Home.module.scss";
 import { ImgPaths } from "../types/enums";
 import { ICompanyObj, IEventObj, IFeatureObj } from "../types/types";
-import styles from "../styles/pages/Home.module.scss";
 
 export const featuresArr: IFeatureObj[] = [
   {

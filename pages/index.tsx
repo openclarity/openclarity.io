@@ -1,15 +1,15 @@
+import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Container from "../components/Container";
 import Layout from "../components/Layout";
+import ThreeCardSection from "../components/pages/home/ThreeCardSection";
+import WhatIsSection from "../components/pages/home/WhatIsSection";
+import { whatIsData } from "../data/whatIsData";
+import useWindowSize from "../hooks/useWindowSize";
+import gridStyles from "../styles/layout/Grid.module.scss";
 import styles from "../styles/pages/Home.module.scss";
 import { ImgPaths } from "../types/enums";
 import { ICompanyObj } from "../types/types";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import useWindowSize from "../hooks/useWindowSize";
-import Container from "../components/Container";
-import gridStyles from "../styles/layout/Grid.module.scss";
-import { whatIsData } from "../data/whatIsData";
-import ThreeCardSection from "../components/pages/home/ThreeCardSection";
-import WhatIsSection from "../components/pages/home/WhatIsSection";
-import Image from "next/image";
 
 const Home = () => {
   return (

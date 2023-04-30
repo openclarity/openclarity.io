@@ -1,4 +1,3 @@
-import React from "react";
 import ReactPlayer from "react-player";
 import Layout from "../../components/Layout";
 import styles from "../../styles/pages/QAVideo.module.scss";

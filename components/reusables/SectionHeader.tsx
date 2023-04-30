@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/components/SectionHeader.module.scss";
 import { Colors, SectionHeaders } from "../../types/enums";
 
