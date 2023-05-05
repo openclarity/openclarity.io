@@ -21,9 +21,10 @@ const NavItem = ({
   return hasDropdown ? (
     <div
       style={{
-        color: router.pathname === RouterPaths.Landing
-          ? Colors.White
-          : Colors.TextDark,
+        color:
+          router.pathname === RouterPaths.Landing
+            ? Colors.White
+            : Colors.TextDark,
         borderBottom:
           router.pathname === route
             ? `2px solid ${
@@ -41,15 +42,22 @@ const NavItem = ({
     <Link href={route}>
       <a
         style={{
-          color: router.pathname === RouterPaths.Landing
-            ? Colors.White
-            : Colors.TextDark,
+          color:
+            router.pathname === RouterPaths.Landing
+              ? Colors.White
+              : Colors.TextDark,
           textDecoration: router.pathname === route ? "underline" : "none",
-          textUnderlineOffset: '.7rem',
-          textDecorationThickness: '2px'
+          textUnderlineOffset: ".7rem",
+          textDecorationThickness: "2px",
         }}
         className={styles.NavbarNavlink}
         target={openNewWindow ? "_blank" : "_self"}
+        onClick={() => {
+          // @ts-ignore
+          window.analytics.track(`${routeName} - Navigation Clicked`, {
+            property_name: `${routeName} - Navigation Clicked`,
+          });
+        }}
       >
         {routeName}
       </a>

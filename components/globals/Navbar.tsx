@@ -23,62 +23,67 @@ const Navbar = () => {
 
   return (
     <div className={styles.Navbar}>
-          <Link href={RouterPaths.Landing}>
-            <a className={styles.NavbarLogoContainer}>
-              <Image
-                className={styles.NavbarLogo}
-                src={
-                  size.width < 1000
-                    ? router.pathname === RouterPaths.Landing
-                      ? ImgPaths.LogoDarkIconSVG
-                      : ImgPaths.LogoLightIconSVG
-                    : router.pathname === RouterPaths.Landing
-                    ? ImgPaths.LogoDarkHorizantalSVG
-                    : ImgPaths.LogoLightHorizantalSVG
-                }
-                alt="logo"
-                width={'200px'}
-                height={'30px'}
-              />
-            </a>
-          </Link>
-          <div className={styles.NavbarNavlinkContainer}>
-            <NavItem
-              route={RouterPaths.Landing}
-              routeName={RouteNames.Landing}
-            />
+      <Link href={RouterPaths.Landing}>
+        <a
+          className={styles.NavbarLogoContainer}
+          onClick={() => {
+            // @ts-ignore
+            window.analytics.track(`Open Calrity Logo Clicked`, {
+              property_name: `Open Calrity Logo Clicked`,
+            });
+          }}
+        >
+          <Image
+            className={styles.NavbarLogo}
+            src={
+              size.width < 1000
+                ? router.pathname === RouterPaths.Landing
+                  ? ImgPaths.LogoDarkIconSVG
+                  : ImgPaths.LogoLightIconSVG
+                : router.pathname === RouterPaths.Landing
+                ? ImgPaths.LogoDarkHorizantalSVG
+                : ImgPaths.LogoLightHorizantalSVG
+            }
+            alt="logo"
+            width={"200px"}
+            height={"30px"}
+          />
+        </a>
+      </Link>
+      <div className={styles.NavbarNavlinkContainer}>
+        <NavItem route={RouterPaths.Landing} routeName={RouteNames.Landing} />
+        <div
+          onMouseLeave={() => setIsDocsOpen(false)}
+          onMouseEnter={() => setIsDocsOpen(true)}
+          className={styles.NavbarNavlinkMenu}
+        >
+          <NavItem routeName={RouteNames.Docs} hasDropdown={true} />
+          {isDocsOpen && (
             <div
-              onMouseLeave={() => setIsDocsOpen(false)}
-              onMouseEnter={() => setIsDocsOpen(true)}
-              className={styles.NavbarNavlinkMenu}
+              className={styles.NavbarNavlinkMenuDropDown}
+              style={{
+                backgroundColor:
+                  router.pathname === RouterPaths.Landing
+                    ? Colors.White
+                    : Colors.GrayBGColor,
+              }}
             >
-              <NavItem routeName={RouteNames.Docs} hasDropdown={true} />
-              {isDocsOpen && (
-                <div
-                  className={styles.NavbarNavlinkMenuDropDown}
-                  style={{
-                    backgroundColor:
-                        router.pathname === RouterPaths.Landing
-                          ? Colors.White
-                          : Colors.GrayBGColor,
-                  }}
-                >
-                  {Object.keys(DocsRoutes).map((item, i) => (
-                    <NavDropdownItem
-                      link={DocsRoutes[item]}
-                      text={item}
-                      internal={false}
-                      key={i}
-                    />
-                  ))}
-                </div>
-              )}
+              {Object.keys(DocsRoutes).map((item, i) => (
+                <NavDropdownItem
+                  link={DocsRoutes[item]}
+                  text={item}
+                  internal={false}
+                  key={i}
+                />
+              ))}
             </div>
-            <NavItem
-              route={RouterPaths.Resources}
-              routeName={RouteNames.Resources}
-            />
-                    <a
+          )}
+        </div>
+        <NavItem
+          route={RouterPaths.Resources}
+          routeName={RouteNames.Resources}
+        />
+        <a
           target="_blank"
           href="https://github.com/openclarity"
           className={styles.NavbarNavlinkIconLink}
@@ -92,7 +97,7 @@ const Navbar = () => {
             }
           />
         </a>
-          </div>
+      </div>
     </div>
   );
 };

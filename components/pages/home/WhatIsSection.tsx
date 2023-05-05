@@ -45,7 +45,15 @@ const WhatIsSection = ({
             </h1>
             <div className={styles.Content}>
               <p className={styles.Description}>{description}</p>
-              <div className={styles.ContentVideo}>
+              <div
+                className={styles.ContentVideo}
+                onClick={() => {
+                  // @ts-ignore
+                  window.analytics.track(`${title} - Video Clicked`, {
+                    property_name: `${title} - Video Clicked`,
+                  });
+                }}
+              >
                 <ReactPlayerLoader
                   accountId="1384193102001"
                   videoId={videoID}
@@ -76,7 +84,17 @@ const WhatIsSection = ({
               </ul>
               <h2 className={styles.Header}>Check out the code:</h2>
               <div className={styles.ButtonWrapper}>
-                <a className={styles.Button} href={githubLink} target="_blank">
+                <a
+                  className={styles.Button}
+                  href={githubLink}
+                  target="_blank"
+                  onClick={() => {
+                    // @ts-ignore
+                    window.analytics.track(`${title} - GitHub Button Clicked`, {
+                      property_name: `${title} - GitHub Button Clicked`,
+                    });
+                  }}
+                >
                   <AiFillGithub size={25} style={{ marginRight: 5 }} />
                   GitHub
                 </a>
@@ -84,6 +102,15 @@ const WhatIsSection = ({
                   className={styles.Button}
                   href={documentationLink}
                   target="_blank"
+                  onClick={() => {
+                    // @ts-ignore
+                    window.analytics.track(
+                      `${title} - Documentation Button Clicked`,
+                      {
+                        property_name: `${title} - Documentation Button Clicked`,
+                      }
+                    );
+                  }}
                 >
                   Documentation
                 </a>
