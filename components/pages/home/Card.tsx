@@ -10,8 +10,9 @@ type Props = {
   subLogo: string;
   description: string;
   link: string;
+  title: string;
 };
-const Card = ({ logo, subLogo, description, link }: Props) => {
+const Card = ({ logo, subLogo, description, link, title }: Props) => {
   const { width } = useWindowSize();
   return (
     <div
@@ -26,17 +27,26 @@ const Card = ({ logo, subLogo, description, link }: Props) => {
     >
       <div className={styles.Card}>
         <Image src={logo} alt="logo" width={"188px"} height={"150px"} />
-          <Image
-            src={subLogo}
-            alt="sublogo"
-            className={styles.Sublogo}
-            width={"270px"}
-            height={"30px"}
-          />
+        <Image
+          src={subLogo}
+          alt="sublogo"
+          className={styles.Sublogo}
+          width={"270px"}
+          height={"30px"}
+        />
         <div className={styles.Details}>
           <p className={styles.Description}>{description}</p>
           <Link href={link}>
-            <a target="_blank" className={styles.Link}>
+            <a
+              target="_blank"
+              className={styles.Link}
+              onClick={() => {
+                // @ts-ignore
+                window.analytics.track(`${title} - Learn More Clicked`, {
+                  property_name: `${title} - Learn More Clicked`,
+                });
+              }}
+            >
               Learn more {">"}
             </a>
           </Link>

@@ -82,8 +82,8 @@ const HeroBanner = () => {
               className={styles.HomeHeaderLogo}
               src={ImgPaths.OpenClarityLogo}
               alt="logo"
-              width={'400px'}
-              height={'60px'}
+              width={"400px"}
+              height={"60px"}
             />
 
             <h2 className={styles.HomeHeaderTextSubheader}>
@@ -103,7 +103,8 @@ const HeroBanner = () => {
               <h1>What is OpenClarity?</h1>
               <h2>
                 OpenClarity is a suite of open source tools for cloud native
-                security and observability — VMClarity, KubeClarity, and APIClarity.
+                security and observability — VMClarity, KubeClarity, and
+                APIClarity.
               </h2>
               <h2>Read more about each project below.</h2>
             </div>
@@ -142,14 +143,20 @@ const IndividualCompanyCard = ({ company }: { company: ICompanyObj }) => {
       href={company.link}
       target="_blank"
       className={styles.IndividualContributorContainer}
+      onClick={() => {
+        // @ts-ignore
+        window.analytics.track(`Adopted by ${company.name} Clicked`, {
+          property_name: `Adopted by ${company.name} Clicked`,
+        });
+      }}
     >
       <div className={styles.IndividualContributorLogoContainer}>
         <Image
           className={styles.IndividualContributorLogo}
           src={company.logo}
           alt={`${company.name} Logo`}
-          width={'200px'}
-          height={'48px'}
+          width={"200px"}
+          height={"48px"}
         />
       </div>
     </a>
