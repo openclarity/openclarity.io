@@ -21,7 +21,9 @@ const NavItem = ({
   return hasDropdown ? (
     <div
       style={{
-        color: Colors.White,
+        color: router.pathname === RouterPaths.Landing
+          ? Colors.White
+          : Colors.TextDark,
         borderBottom:
           router.pathname === route
             ? `2px solid ${
@@ -39,7 +41,9 @@ const NavItem = ({
     <Link href={route}>
       <a
         style={{
-          color: Colors.White,
+          color: router.pathname === RouterPaths.Landing
+            ? Colors.White
+            : Colors.TextDark,
           textDecoration: router.pathname === route ? "underline" : "none",
           textUnderlineOffset: '.7rem',
           textDecorationThickness: '2px'

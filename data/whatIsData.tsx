@@ -2,24 +2,26 @@ import { ImgPaths } from "../types/enums";
 
 export const whatIsData = [
   {
-    title: "FunctionClarity",
+    title: "VMClarity",
     description:
-      "FunctionClarity is an open source tool that provides a framework for signing and validating serverless cloud function artifacts (images or code) utilizing various signing techniques, including keyless.",
+      "VMClarity is an open source tool for agentless detection and management of Virtual Machine Software Bill Of Materials (SBOM) and security threats such as vulnerabilities, exploits, malware, rootkits, misconfigurations and leaked secrets.",
     keyCapabilities: [
-      "Combined from CLI for signing and serverless infrastructure for validation",
-      "Multi-cloud support (GCP, AWS, AZURE)",
-      "Keyless and key-pair support",
-      "Multiple validation feedback support (detect, block, and notification)",
+      "SBOM analysis",
+      "Package and OS vulnerability detection",
+      "Exploit detection",
+      "Leaked secret detection",
+      "Malware detection",
+      "Misconfiguration detection",
+      "Rootkit detection",
     ],
-    githubLink: "https://github.com/openclarity/functionclarity",
-    documentationLink: "https://github.com/openclarity/functionclarity/blob/main/README.md",
+    githubLink: "https://github.com/openclarity/vmclarity",
+    documentationLink: "https://github.com/openclarity/vmclarity/blob/main/README.md",
     mainColor: "#f0ad42",
     thumbnail: ImgPaths.DefaultThumbnail,
-    diagram: ImgPaths.FunctionClarityDiagram,
+    diagram: ImgPaths.VMClarityDiagram,
     diagramHeight: '603px',
-    videoID: "6313395920112",
+    videoID: "6324304119112",
   },
-
   {
     title: "KubeClarity",
     description:

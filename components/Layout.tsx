@@ -5,7 +5,7 @@ import Navbar from "./globals/Navbar";
 import Footer from "./globals/Footer";
 import { NextSeo } from "next-seo";
 
-export const siteTitle = "APIClarity";
+export const siteTitle = "OpenClarity";
 
 const Layout = ({
 	pageTitle,
@@ -36,24 +36,24 @@ const Layout = ({
 				{/*<!--Tracking Code End of HubSpot Embed Code -->*/}
 			</Head>
 			<NextSeo
-				title={`APIClarity | ${pageTitle}`}
-				description="Open source for API traffic visibility in K8s clusters"
-				canonical={`https://apiclarity.io${pagePath || ""}`}
+				title={`OpenClarity | ${pageTitle}`}
+				description="OpenClarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity."
+				canonical={`https://openclarity.io${pagePath || ""}`}
 				openGraph={{
-					url: `https://apiclarity.io${pagePath || ""}`,
-					title: `APIClarity | ${pageTitle}`,
+					url: `https://openclarity.io${pagePath || ""}`,
+					title: `OpenClarity | ${pageTitle}`,
 					description:
-						"Open source for API traffic visibility in K8s clusters",
+						"OpenClarity is a suite of open source tools for cloud native security and observability — VMClarity, KubeClarity, and APIClarity.",
 					images: [
 						{
-							url: "https://apiclarity.io/assets/shared/logos/logo-dark-vertical-2x.png",
-							alt: "APIClarity Logo",
+							url: "https://openclarity.io/assets/shared/logos/opengraph-logo.png",
+							alt: "OpenClarity Logo",
 							type: "image/png",
 							width: 222,
-							height: 121
+							height: 128
 						},
 					],
-					site_name: "APIClarity",
+					site_name: "OpenClarity",
 				}}
 				twitter={{
 					handle: "@ciscoemerge",

@@ -33,7 +33,7 @@ export enum SectionHeaders {
 
 export enum RouterPaths {
   Landing = "/",
-  Resources = "https://www.apiclarity.io/resources",
+  Resources = "/resources",
   // Blog = "/blog",
   About = "/about",
   Docs = "/docs",
@@ -46,7 +46,7 @@ export enum RouteNames {
 }
 
 export enum DocsRoutes {
-  FunctionClarity = "https://github.com/openclarity/functionclarity/blob/main/README.md",
+  VMClarity = "https://github.com/openclarity/vmclarity/blob/main/README.md",
   KubeClarity = "https://github.com/openclarity/kubeclarity/blob/main/README.md",
   APIClarity = "https://github.com/openclarity/apiclarity.io/blob/main/README.md",
 }
@@ -67,7 +67,7 @@ export enum ImgPaths {
   LogoDarkVertical = "/assets/shared/logos/logo-dark-vertical.png",
   LogoDarkVertical2x = "/assets/shared/logos/logo-dark-vertical-2x.png",
   LogoDarkHorizantalSVG = "/assets/shared/logos/logo-dark-horizantal-svg.svg",
-  LogoDarkIconSVG = "/assets/shared/logos/logo-dark-icon-svg.svg",
+  LogoDarkIconSVG = "/assets/shared/logos/logo-dark-svg.svg",
   LogoLightHorizantalSVG = "/assets/shared/logos/logo-light-horizantal-svg.svg",
   LogoLightIconSVG = "/assets/shared/logos/logo-light-icon-svg.svg",
   SharedImages = "/assets/shared",
@@ -79,15 +79,15 @@ export enum ImgPaths {
   OpenClarityLogo = "/assets/shared/logos/open-clarity-logo.svg",
   HeroBackground = "/assets/shared/hero-background.webp",
   HeroForeground = "/assets/shared/hero-foreground.webp",
-  FunctionClarityLogo = "/assets/shared/logos/function-clarity-logo.svg",
-  FunctionClaritySubLogo = "/assets/shared/logos/function-clarity-sublogo.svg",
+  VMClarityLogo = "/assets/shared/logos/vmclarity-logo.svg",
+  VMClaritySubLogo = "/assets/shared/logos/vmclarity-sublogo.svg",
   KubeClarityLogo = "/assets/shared/logos/kube-clarity-logo.svg",
   KubeClaritySubLogo = "/assets/shared/logos/kube-clarity-sublogo.svg",
   APIClarityLogo = "/assets/shared/logos/api-clarity-logo.svg",
   APIClaritySubLogo = "/assets/shared/logos/api-clarity-sublogo.svg",
   APIClarityThumbnail = "/assets/shared/api-clarity-thumbnail.webp",
   DefaultThumbnail = "/assets/shared/default-thumbnail.webp",
-  FunctionClarityDiagram = "/assets/shared/function-clarity-diagram.webp",
+  VMClarityDiagram = "/assets/shared/vm-clarity-diagram.webp",
   KubeClarityDiagram = "/assets/shared/kube-clarity-diagram.webp",
   APIClarityDiagram = "/assets/shared/api-clarity-diagram.webp",
 }

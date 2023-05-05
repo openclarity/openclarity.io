@@ -87,7 +87,7 @@ const HeroBanner = () => {
             />
 
             <h2 className={styles.HomeHeaderTextSubheader}>
-              Cisco's complementary open source projects
+              Cloud native application security and observability
             </h2>
           </div>
         </div>
@@ -100,14 +100,10 @@ const HeroBanner = () => {
           <div className={gridStyles.Grid}>
             <div className={gridStyles.Span1} />
             <div className={gridStyles.Span10}>
-              <h1>What is OPENClarity?</h1>
+              <h1>What is OpenClarity?</h1>
               <h2>
-                OpenClarity is a suite of open source tools for cloud-native
-                security and observability—APIClarity, KubeClarity, and
-                FunctionClarity (which will be launched at
-                KubeCon+CloudNativeCon USA in October, 2022). These tools
-                complement the functionality in Cisco’s cloud-native application
-                security platform, Panoptica.
+                OpenClarity is a suite of open source tools for cloud native
+                security and observability — VMClarity, KubeClarity, and APIClarity.
               </h2>
               <h2>Read more about each project below.</h2>
             </div>
